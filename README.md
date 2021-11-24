@@ -40,23 +40,23 @@ To install the dependencies on a Windows machine, use the `install.bat` script.
 The tracker was tested on the Linux 16.04.1 Ubuntu with 1 NVidia GTX Titan XP card and cudatoolkit version 10.
 
 #### Test the tracker
-1.) Specify the path to the DMB by setting the `params.pth_path` in the `pytracking/parameters/DMB/DMB_default_params.py`. <br/>
-2.) Specify the path to the VOT 2018 dataset by setting the `self.data_root` in the `votTester/vot.py`. <br/>
+1.) Specify the path to the CMEDFL model by setting the `params.pth_path` in the `pytracking/parameters/segm/segm_default_params.py`. <br/>
+2.) Specify the path to the VOT 2018 dataset by setting the `home/data-path` in the `votTester/vot.py`. <br/>
 3.) Activate the conda environment
 ```bash
 conda activate pytracking
 ```
-4.) Run the run_vot_test.py to run CMEDFL using VOT18 benchmark.
+4.) Run the run_vot_test.py to test CMEDFL using VOT18 benchmark.
 ```bash
 python run_vot_test.py
 ```
 or 
 ```bash
 cd pytracking
-python run_tracker.py segm default_params --dataset **benchmark
+python run_tracker.py segm default_params --dataset benchmark
 ```
 
-5.) Run the test_davis.py to run CMEDFL using DAVIS2017 benchmark.
+5.) Run the test_davis.py to test CMEDFL using DAVIS2017 benchmark.
 ```bash
 python test_davis.py --dataset DAVIS2017
 ```
