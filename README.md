@@ -75,5 +75,5 @@ python run_training.py segm segm_default
 This is a modified version of the python framework pytracking and based on **PyTorch**. We would like to thank the authors Martin Danelljan and Goutam Bhat for providing such a great framework.
 
 ## Contact
-* Hongtao Yu (email: yuhontao@tju.edu.cn)
+* Hongtao Yu (email: yuhongtao@tju.edu.cn)
 * Pengfei Zhu (email: zhupengfei@tju.edu.cn)
