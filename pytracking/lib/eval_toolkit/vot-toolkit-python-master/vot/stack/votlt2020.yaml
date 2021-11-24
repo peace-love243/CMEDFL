@@ -1,0 +1,20 @@
+title: VOT-LT2020 challenge
+dataset: vot:vot-lt2019
+url: http://www.votchallenge.net/vot2020/
+experiments:
+  longterm:
+    type: unsupervised
+    repetitions: 1
+    analyses:
+      - type: tpr
+        name: tpr
+      - type: prcurve
+      - type: fscorecurve
+  redetection:
+    type: unsupervised
+    transformers:
+      - type: Redetection
+        length: 200
+        initialization: 5
+        padding: 2
+        scaling: 3

@@ -1,0 +1,21 @@
+title: VOT2016 challenge
+dataset: vot:vot2016
+url: http://www.votchallenge.net/vot2016/
+experiments:
+  baseline:
+    type: SupervisedExperiment
+    repetitions: 15
+    skip_initialize: 5
+    analyses:
+      - type: AccuracyRobustnessSupervised
+        sensitivity: 30
+      - type: Failures
+      - type: EAOScoreSupervised
+        low: 108
+        high: 371
+      - type: EAOCurveSupervised
+  unsupervised:
+    type: UnsupervisedExperiment
+    repetitions: 1
+    analyses:
+      - type: AverageAccuracy

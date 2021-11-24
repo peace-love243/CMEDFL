@@ -1,0 +1,16 @@
+title: VOT2015 challenge
+dataset: vot:vot2015
+url: http://www.votchallenge.net/vot2015/
+experiments:
+  baseline:
+    type: SupervisedExperiment
+    repetitions: 15
+    skip_initialize: 5
+    analyses:
+      - type: AccuracyRobustnessSupervised
+        sensitivity: 30
+      - type: Failures
+      - type: EAOScoreSupervised
+        low: 108
+        high: 371
+      - type: EAOCurveSupervised
