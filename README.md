@@ -1,7 +1,7 @@
 # Learning Dynamic Compact Memory Embedding for Deformable Visual Object Tracking
 
 ## Publication:
-Pengfei Zhu, Hongtao Yu, Kaihua Zhang, Yu Wang, Shuai Zhao, Lei Wang, Tianzhu Zhang, Qinghua Hu.
+Hongtao Yu, Pengfei Zhu, Kaihua Zhang, Yu Wang, Shuai Zhao, Lei Wang, Tianzhu Zhang, Qinghua Hu.
 
 
 <b>Learning Dynamic Compact Memory Embedding for Deformable Visual Object Tracking
@@ -73,6 +73,19 @@ python run_training.py segm segm_default
 
 ## Pytracking
 This is a modified version of the python framework pytracking and based on **PyTorch**. We would like to thank the authors Martin Danelljan and Goutam Bhat for providing such a great framework.
+
+## Citation
+
+If you find this code useful for your research, please use the following BibTeX entry.
+
+```bibtex
+@article{cmedfl
+  title={Learning Dynamic Compact Memory Embedding for Deformable Visual Object Tracking},
+  author={Hongtao, Yu and Pengfei, Zhu and Kaihua, Zhang and Yu, Wang and Shuai, Zhao and Lei, Wang and Tianzhu, Zhang and Qinghua, Hu},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2022}
+}
+```
 
 ## Contact
 * Hongtao Yu (email: yuhongtao@tju.edu.cn)
